@@ -35,7 +35,7 @@ This documenation presents basic usage examples of Python's **pathlib** library.
 
 > Mine is Python **3.7.2** and I am trying it on **MAC OS Mojave**.
 
-![pathlib](./python3-pathlib-title.webp)
+![pathlib](./images/python3-pathlib-title.webp)
 
 ## Directory structure of working directory
 
@@ -311,7 +311,25 @@ True
 ```
 
 
+## Help
 
+```python
+>>> from pathlib import Path
+>>> 
+>>> root = Path(".")
+>>> 
+>>> dir(root)
+['__bytes__', '__class__', '__delattr__', '__dir__', '__doc__', '__enter__', '__eq__', '__exit__', '__format__', '__fspath__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rtruediv__', '__setattr__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '__truediv__', '_accessor', '_cached_cparts', '_closed', '_cparts', '_drv', '_flavour', '_format_parsed_parts', '_from_parsed_parts', '_from_parts', '_hash', '_init', '_make_child', '_make_child_relpath', '_opener', '_parse_args', '_parts', '_pparts', '_raise_closed', '_raw_open', '_root', '_str', 'absolute', 'anchor', 'as_posix', 'as_uri', 'chmod', 'cwd', 'drive', 'exists', 'expanduser', 'glob', 'group', 'home', 'is_absolute', 'is_block_device', 'is_char_device', 'is_dir', 'is_fifo', 'is_file', 'is_mount', 'is_reserved', 'is_socket', 'is_symlink', 'iterdir', 'joinpath', 'lchmod', 'lstat', 'match', 'mkdir', 'name', 'open', 'owner', 'parent', 'parents', 'parts', 'read_bytes', 'read_text', 'relative_to', 'rename', 'replace', 'resolve', 'rglob', 'rmdir', 'root', 'samefile', 'stat', 'stem', 'suffix', 'suffixes', 'symlink_to', 'touch', 'unlink', 'with_name', 'with_suffix', 'write_bytes', 'write_text']
+>>> 
+>>> help(root)
+
+>>> help(root.exists())
+>>> 
+>>> help(root.as_uri)
+
+>>> 
+
+```
 
 ## References
 
