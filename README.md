@@ -13,6 +13,12 @@ This documenation presents basic usage examples of Python's pathlib library. Bef
 + In Python **3.4**, pathlib is now part of the standard library. For Python **3.3** and earlier, `easy_install pathlib` or `pip install pathlib` should do the trick.
 
 
+> Mean to say
+
+| Python 2.6 - Python3.3 | >= Python 3.4 |
+| pip install pathlib | No installation is required just try as it the part of standard library |
+| easy_install pathlib ||
+
 ## Directory structure of working directory
 
 We will be working on [root](./root) directory. This directory has the following structure.
@@ -111,6 +117,23 @@ PosixPath('.')
 
 ```
 
+#### Getting absoute path of `root` directory
+
+```python
+>>> root.absolute()
+PosixPath('/Users/hygull/Projects/Python3/try-pathlib/root')
+>>> 
+
+```
+
+#### Getting `home` directory's absolute path
+
+```python
+>>> root.home()
+PosixPath('/Users/hygull')
+
+```
+
 #### &raquo; Listing out all python files present in any of the directories availble under current directory
 
 ```python
@@ -202,6 +225,73 @@ True
 >>> 
 
 ```
+
+#### Getting URI
+
+```python
+>>> python
+PosixPath('python')
+>>> 
+```
+
+```python
+>>> python.as_uri()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/usr/local/Cellar/python/3.7.2_1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/pathlib.py", line 714, in as_uri
+    raise ValueError("relative path can't be expressed as a file URI")
+ValueError: relative path can't be expressed as a file URI
+>>> 
+```
+
+```python
+>>> python = python.resolve()
+>>> python
+PosixPath('/Users/hygull/Projects/Python3/try-pathlib/root/python')
+>>> 
+```
+
+```python
+>>> python.as_uri()
+'file:///Users/hygull/Projects/Python3/try-pathlib/root/python'
+>>> 
+
+```
+
+
+#### Printing parent directories and checking their existence
+
+```python
+>>> go = go.resolve()
+>>> go.as_uri()
+'file:///Users/hygull/Projects/Python3/try-pathlib/root/python/examples/go'
+>>>
+
+```
+
+```python
+>>> examples = go.parent
+>>> examples
+PosixPath('/Users/hygull/Projects/Python3/try-pathlib/root/python/examples')
+>>> 
+>>> examples.exists()
+True
+>>> 
+
+```
+
+```python
+>>> python = examples.parent
+>>> python
+PosixPath('/Users/hygull/Projects/Python3/try-pathlib/root/python')
+>>> 
+>>> python.exists()
+True
+>>> 
+```
+
+
+
 
 ## References
 
