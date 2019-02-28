@@ -94,6 +94,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 We are done, let's start.
 
+![try-pathlib-mac](./images/try-pathlib-28-feb-2019-01-05am.png)
+
 #### &raquo; Listing out directories and files of current directory separately
 
 ```python 
