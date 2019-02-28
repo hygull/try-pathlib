@@ -1,6 +1,8 @@
 # Python's pathlib - usage examples
 
-This documenation presents basic usage examples of Python's pathlib library. Before trying examples in this page make sure to check your Python version by reading the below note or [visit here](https://pypi.org/project/pathlib/?fbclid=IwAR0-Jk14-IkTLCNldiHXvv5HAzhE_C71YDMdv9vmfT0QtlILYZku_7gLKSM) to check, mine is Python3.7.2.
+This documenation presents basic usage examples of Python's pathlib library. Before trying examples in this page make sure to check your Python version by reading the below note or [visit here](https://pypi.org/project/pathlib/?fbclid=IwAR0-Jk14-IkTLCNldiHXvv5HAzhE_C71YDMdv9vmfT0QtlILYZku_7gLKSM) to check.
+
+> Mine is Python3.7.2 and I am trying it on **MAC OS Mojave**.
 
 ![Pathlib-inheritance](./images/pathlib-inheritance.png)
 
@@ -83,7 +85,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 We are done, let's start.
 
-### Example 1
+### Example 1 - listing out directories and files of current directory separately
 
 ```python 
 >>> from pathlib import Path
@@ -92,14 +94,30 @@ We are done, let's start.
 >>> root
 PosixPath('.')
 >>> 
+```
+
+```python
 >>> directories = [dir_content for dir_content in root.iterdir() if dir_content.is_dir()]
 >>> directories
 [PosixPath('go'), PosixPath('python'), PosixPath('js'), PosixPath('cpp'), PosixPath('c')]
->>> 
+>>>
+```
+
+```python 
 >>> files = [dir_content for dir_content in root.iterdir() if dir_content.is_file()]
 >>> files
 [PosixPath('doc.md'), PosixPath('main.md')]
 >>> 
+
+```
+
+### Example 2 - Listing out all python files present in any of the directories availble under current directory
+
+```python
+>>> list(root.glob("**/*.py"))
+[PosixPath('go/docs/loop.py'), PosixPath('python/hello.py'), PosixPath('js/try/examples/dict-example.py')]
+>>> 
+
 
 ```
 
