@@ -1,11 +1,11 @@
 # Python's pathlib - usage examples
 
-This documenation presents basic usage examples of Python's pathlib library. Before trying examples in this page make sure to check your Python version by reading the below note or [visit here](https://pypi.org/project/pathlib/?fbclid=IwAR0-Jk14-IkTLCNldiHXvv5HAzhE_C71YDMdv9vmfT0QtlILYZku_7gLKSM) to check.
+This documenation presents basic usage examples of Python's **pathlib** library. Before trying examples in this page make sure to check your Python version by reading the below note or [visit here](https://pypi.org/project/pathlib/?fbclid=IwAR0-Jk14-IkTLCNldiHXvv5HAzhE_C71YDMdv9vmfT0QtlILYZku_7gLKSM) to check.
 
 
 ![Pathlib-inheritance](./images/pathlib-inheritance.png)
 
-## What if offers, what speciality it has?
+## What it offers, what speciality it has?
 
 **pathlib** offers a set of classes to handle filesystem paths. It offers the following advantages over using string objects:
 
@@ -14,6 +14,10 @@ This documenation presents basic usage examples of Python's pathlib library. Bef
 + Embodies the semantics of different path types. For example, comparing Windows paths ignores casing.
 
 + Well-defined semantics, eliminating any warts or ambiguities (forward vs. backward slashes, etc.).
+
+| pathlib | inheritance |
+| --- | --- |
+| ![pathlib](./images/pathlib-2nd.png)|![inheritance](./images/7tVD0.png)|
 
 ## Note
 
@@ -31,6 +35,7 @@ This documenation presents basic usage examples of Python's pathlib library. Bef
 
 > Mine is Python **3.7.2** and I am trying it on **MAC OS Mojave**.
 
+![pathlib](./python3-pathlib-title.webp)
 
 ## Directory structure of working directory
 
