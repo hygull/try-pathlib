@@ -182,7 +182,26 @@ True
 >>> 
 ```
 
++ Single line to navigate to go directory - `go = root / "python" / "examples" / "go"`
 
+```python
+>>> examples = root / "examples"
+>>> examples.exists()
+False
+>>> 
+>>> examples = root / "python" / "examples"
+>>> examples.exists()
+True
+>>> 
+```
+
+```python
+>>> go = root / "python" / "examples" / "go"
+>>> go.exists()
+True
+>>> 
+
+```
 
 ## References
 
