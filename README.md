@@ -2,7 +2,6 @@
 
 This documenation presents basic usage examples of Python's pathlib library. Before trying examples in this page make sure to check your Python version by reading the below note or [visit here](https://pypi.org/project/pathlib/?fbclid=IwAR0-Jk14-IkTLCNldiHXvv5HAzhE_C71YDMdv9vmfT0QtlILYZku_7gLKSM) to check.
 
-> Mine is Python **3.7.2** and I am trying it on **MAC OS Mojave**.
 
 ![Pathlib-inheritance](./images/pathlib-inheritance.png)
 
@@ -13,11 +12,15 @@ This documenation presents basic usage examples of Python's pathlib library. Bef
 + In Python **3.4**, pathlib is now part of the standard library. For Python **3.3** and earlier, `easy_install pathlib` or `pip install pathlib` should do the trick.
 
 
-> Mean to say
+&raquo; Mean to say
 
 | Python 2.6 - Python3.3 | >= Python 3.4 |
+| --- | --- |
 | pip install pathlib | No installation is required just try as it the part of standard library |
 | easy_install pathlib ||
+
+> Mine is Python **3.7.2** and I am trying it on **MAC OS Mojave**.
+
 
 ## Directory structure of working directory
 
@@ -117,7 +120,7 @@ PosixPath('.')
 
 ```
 
-#### Getting absoute path of `root` directory
+#### &raquo; Getting absoute path of `root` directory
 
 ```python
 >>> root.absolute()
@@ -126,7 +129,7 @@ PosixPath('/Users/hygull/Projects/Python3/try-pathlib/root')
 
 ```
 
-#### Getting `home` directory's absolute path
+#### &raquo; Getting `home` directory's absolute path
 
 ```python
 >>> root.home()
@@ -226,7 +229,7 @@ True
 
 ```
 
-#### Getting URI
+#### &raquo; Getting URI
 
 ```python
 >>> python
@@ -259,7 +262,7 @@ PosixPath('/Users/hygull/Projects/Python3/try-pathlib/root/python')
 ```
 
 
-#### Printing parent directories and checking their existence
+#### &raquo; Printing parent directories and checking their existence
 
 ```python
 >>> go = go.resolve()
