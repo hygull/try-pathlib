@@ -2,15 +2,15 @@
 
 This documenation presents basic usage examples of Python's pathlib library. Before trying examples in this page make sure to check your Python version by reading the below note or [visit here](https://pypi.org/project/pathlib/?fbclid=IwAR0-Jk14-IkTLCNldiHXvv5HAzhE_C71YDMdv9vmfT0QtlILYZku_7gLKSM) to check.
 
-> Mine is Python3.7.2 and I am trying it on **MAC OS Mojave**.
+> Mine is Python **3.7.2** and I am trying it on **MAC OS Mojave**.
 
 ![Pathlib-inheritance](./images/pathlib-inheritance.png)
 
 ## Note
 
-+ Python 3.2 or later is recommended, but pathlib is also usable with Python 2.7 and 2.6.
++ Python **3.2** or later is recommended, but pathlib is also usable with Python **2.7** and **2.6**.
 
-+ In Python 3.4, pathlib is now part of the standard library. For Python 3.3 and earlier, `easy_install pathlib` or `pip install pathlib` should do the trick.
++ In Python **3.4**, pathlib is now part of the standard library. For Python **3.3** and earlier, `easy_install pathlib` or `pip install pathlib` should do the trick.
 
 
 ## Directory structure of working directory
@@ -85,7 +85,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 We are done, let's start.
 
-### Example 1 - listing out directories and files of current directory separately
+#### &raquo; Listing out directories and files of current directory separately
 
 ```python 
 >>> from pathlib import Path
@@ -111,7 +111,7 @@ PosixPath('.')
 
 ```
 
-### Example 2 - Listing out all python files present in any of the directories availble under current directory
+#### &raquo; Listing out all python files present in any of the directories availble under current directory
 
 ```python
 >>> list(root.glob("**/*.py"))
@@ -122,8 +122,65 @@ PosixPath('.')
 ```
 
 
+#### &raquo; Navigating to `root/python/examples/go` and lisiting out its content(s).
 
++ Brief look using terminal.
 
+```bash
+Rishikeshs-MacBook-Air:root hygull$ 
+Rishikeshs-MacBook-Air:root hygull$ ls python/examples/
+go
+Rishikeshs-MacBook-Air:root hygull$ ls python/examples/go/
+slice.go
+Rishikeshs-MacBook-Air:root hygull$ cat python/examples/go/slice.go 
+package main 
+
+import "fmt"
+
+func main() {
+	a := []int{12, 5, 6, 8}
+	fmt.Print(a)
+}
+
+```
+
++ Prgramatically navigating to `root/python/examples/go` by verifying the navigated location's existence.
+
+```python
+>>> root
+PosixPath('.')
+>>> 
+>>> python = root / "python"
+>>> python
+PosixPath('python')
+>>> 
+>>> python.exists()
+True
+>>> 
+>>> examples = python / "examples"
+>>> examples
+PosixPath('python/examples')
+>>> 
+>>> examples.exists()
+True
+>>> 
+>>> go = examples / "go"
+>>> go
+PosixPath('python/examples/go')
+>>> 
+>>> go.exists()
+True
+>>> 
+
+```
+
++ Lisiting out content(s) of **go** directory.
+
+```python
+>>> list(go.iterdir())
+[PosixPath('python/examples/go/slice.go')]
+>>> 
+```
 
 
 
