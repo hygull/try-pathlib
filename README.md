@@ -16,8 +16,8 @@ This documenation presents basic usage examples of Python's pathlib library. Bef
 
 | Python 2.6 - Python3.3 | >= Python 3.4 |
 | --- | --- |
-| pip install pathlib | No installation is required just try as it the part of standard library |
-| easy_install pathlib ||
+| `pip install pathlib` OR | No installation is required just try it |
+| `easy_install pathlib` | Now it's the part of Python's standard library |
 
 > Mine is Python **3.7.2** and I am trying it on **MAC OS Mojave**.
 
@@ -298,8 +298,8 @@ True
 
 ## References
 
-+ https://python.readthedocs.io/en/stable/library/pathlib.html
++ [https://python.readthedocs.io/en/stable/library/pathlib.html](https://python.readthedocs.io/en/stable/library/pathlib.html)
 
-+ https://pypi.org/project/pathlib/?fbclid=IwAR0-Jk14-IkTLCNldiHXvv5HAzhE_C71YDMdv9vmfT0QtlILYZku_7gLKSM
++ [https://pypi.org/project/pathlib/?fbclid=IwAR0-Jk14-IkTLCNldiHXvv5HAzhE_C71YDMdv9vmfT0QtlILYZku_7gLKSM](https://pypi.org/project/pathlib/?fbclid=IwAR0-Jk14-IkTLCNldiHXvv5HAzhE_C71YDMdv9vmfT0QtlILYZku_7gLKSM)
 
-+ https://realpython.com/python-pathlib/
++ [https://realpython.com/python-pathlib/](https://realpython.com/python-pathlib/)
