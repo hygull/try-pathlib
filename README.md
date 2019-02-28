@@ -5,6 +5,16 @@ This documenation presents basic usage examples of Python's pathlib library. Bef
 
 ![Pathlib-inheritance](./images/pathlib-inheritance.png)
 
+## What if offers, what speciality it has?
+
+**pathlib** offers a set of classes to handle filesystem paths. It offers the following advantages over using string objects:
+
++ No more cumbersome use of os and os.path functions. Everything can be done easily through operators, attribute accesses, and method calls.
+
++ Embodies the semantics of different path types. For example, comparing Windows paths ignores casing.
+
++ Well-defined semantics, eliminating any warts or ambiguities (forward vs. backward slashes, etc.).
+
 ## Note
 
 + Python **3.2** or later is recommended, but pathlib is also usable with Python **2.7** and **2.6**.
