@@ -322,7 +322,7 @@ True
         "aim": "Creating files with contents (few lines)",
         "created_by": "Rishikesh Agrawani",
         "description": "First the code will check if there is a directory 
-                        named `created_files` in the current working
+                        named `created_files` in the current working directory
                         if it exists, it will create files inside that
                         it it doesn't exist, create the folder first and then create file
                         named `message.txt` inside that"
@@ -371,6 +371,25 @@ file.write_text('\n'.join(lines))
 >>> 
 
 ```
+
+## Screenshots
+
+[ScreenShot2019-03-02at8.26.27AM.png](./images/linkedin-article/ScreenShot2019-03-02at8.26.27AM.png)
+
+[ScreenShot2019-03-02at9.31.17AM.png](./images/linkedin-article/ScreenShot2019-03-02at9.31.17AM.png)
+
+[ScreenShot2019-03-02at12.31.04PM.png](./images/linkedin-article/ScreenShot2019-03-02at12.31.04PM.png)
+
+[ScreenShot2019-03-02at2.25.17PM.png](./images/linkedin-article/ScreenShot2019-03-02at2.25.17PM.png)
+
+[ScreenShot2019-03-02at2.40.59PM.png](./images/linkedin-article/ScreenShot2019-03-02at2.40.59PM.png)
+
+[ScreenShot2019-03-02at3.20.25PM.png](./images/linkedin-article/ScreenShot2019-03-02at3.20.25PM.png)
+
+[ScreenShot2019-03-02at3.33.55PM.png](./images/linkedin-article/ScreenShot2019-03-02at3.33.55PM.png)
+
+[ScreenShot2019-03-02at3.47.52PM.png](./images/linkedin-article/ScreenShot2019-03-02at3.47.52PM.png)
+
 
 ## References
 
